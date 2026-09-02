@@ -188,13 +188,13 @@ jobs:
       # Which AI provider to call. Supported: openai | claude | gemini.
       # The matching API key must be stored in the AI_REVIEW_TOKEN
       # Environment secret (see cliq-production environment secrets above).
-      AI_REVIEW_SERVICE: claude
+      AI_REVIEW_SERVICE: openai
 
       # USER CONFIG (in-file): AI_REVIEW_MODEL
       # Model name for the chosen AI_REVIEW_SERVICE above. Leave blank ("")
       # to fall back to that provider's default model:
       #   openai -> gpt-4.1-mini | claude -> claude-sonnet-5 | gemini -> gemini-2.5-flash  
-      AI_REVIEW_MODEL: claude-sonnet-5
+      AI_REVIEW_MODEL: gpt-4.1-mini
     steps:
       # ---------------------------------------------------------------------
       # (B) Environment SECRETS — required, must be set on the protected
